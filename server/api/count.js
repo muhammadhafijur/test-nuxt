@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const filePath = path.resolve('../../count.json'); // Ensure the path is correct
+const filePath = path.resolve('data/count.json'); // Ensure the path is correct
 
 export default defineEventHandler(async (event) => {
   if (event.node.req.method === 'GET') {
